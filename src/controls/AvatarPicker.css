@@ -1,0 +1,64 @@
+.avatar_image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.avatar_current{
+	border: 1px solid transparent;
+}
+.avatar_current:hover{
+	border: 1px solid rgb(155, 160, 163);
+}
+
+.avatar_popover{
+	border: 3px solid transparent;
+}
+
+.avatar_popover:hover{
+	border: 3px solid rgb(155, 160, 163);
+	color: rgb(122, 161, 178, 0.20);
+}
+
+.loading_wheel {
+  border-right: 3px solid rgb(122, 161, 178);
+  border-top: 3px solid rgb(155, 160, 163);
+  border-left: 3px solid rgb(155, 160, 163);
+  border-bottom: 3px solid rgb(155, 160, 163);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-radius: 50%;
+  animation: loading-spin infinite 1s ease;
+}
+
+@keyframes loading-spin {
+  0% { 
+  	border-right: 3px solid rgb(122, 161, 178);
+  	border-top: 3px solid rgb(155, 160, 163);
+  	border-left: 3px solid rgb(155, 160, 163);
+  	border-bottom: 3px solid rgb(155, 160, 163); }
+  25% { 
+  	border-right: 3px solid rgb(155, 160, 163);
+  	border-top: 3px solid rgb(155, 160, 163);
+  	border-left: 3px solid rgb(155, 160, 163);
+  	border-bottom: 3px solid rgb(122, 161, 178); }
+  50% { 
+  	border-right: 3px solid rgb(155, 160, 163);
+  	border-top: 3px solid rgb(155, 160, 163);
+  	border-left: 3px solid rgb(122, 161, 178);
+  	border-bottom: 3px solid rgb(155, 160, 163); }
+  75% { 
+  	border-right: 3px solid rgb(155, 160, 163);
+  	border-top: 3px solid rgb(122, 161, 178);
+  	border-left: 3px solid rgb(155, 160, 163);
+  	border-bottom: 3px solid rgb(155, 160, 163); }
+  100% { 
+  	border-right: 3px solid rgb(122, 161, 178);
+  	border-top: 3px solid rgb(155, 160, 163);
+  	border-left: 3px solid rgb(155, 160, 163);
+  	border-bottom: 3px solid rgb(155, 160, 163); }
+}
